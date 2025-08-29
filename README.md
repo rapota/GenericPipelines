@@ -1,16 +1,23 @@
 # GenericPipelines
 
-A lightweight .NET library which allow you to build your own pipelines to enhance your handlers with middlewares.
+A lightweight .NET library which allows you to decorate handlers (method invoke) with your own custom middlewares.
 
 With this tool can implement similar to ASP.NET Core Middleware pattern.
+Implementation is comparable to MediatR's Behaviors. Comparing to 'behaviors' there are several differences:
+* there is no single interface to invoke handlers
+* need to explicitly define interface for each handler
+* need to explicitly inject each handler's interface to use it
+* need to explicitly specify custom pipeline for each handler
+* need to explicitly specify order of middlewares for each custom pipeline
+* middlewares (behaviors) are resolved only once at injection stage, and instances will be reused for each handler invoke
 
 Fundamental principles:
 * lightweight with no dependencies
-* minimal code impact
-* DI used to resolve all handlers and middlewares/pipelines
-* no reflection used
-* code generation is used
 * AOT compatible
+* minimal code impact
+* DI is used to resolve all handlers and middlewares/pipelines
+* no reflection is used
+* code generation is used
 
 ## Installing GenericPipelines
 

@@ -21,7 +21,7 @@
     <PackageProjectUrl>https://github.com/rapota/GenericPipelines</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rapota/GenericPipelines</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Description>A lightweight .NET library which allow you to build your own pipelines to enhance your handlers with middlewares.</Description>
+    <Description>A lightweight .NET library which allows you to decorate handlers (method invoke) with your own custom middlewares.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 

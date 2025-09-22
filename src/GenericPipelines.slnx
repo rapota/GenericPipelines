@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="GenericPipelines.IntegrationTests/GenericPipelines.IntegrationTests.csproj" />
+  <Project Path="GenericPipelines.Tests/GenericPipelines.Tests.csproj" />
+  <Project Path="GenericPipelines/GenericPipelines.csproj" />
+</Solution>

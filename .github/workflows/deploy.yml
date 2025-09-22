@@ -16,11 +16,11 @@ jobs:
       with:
         dotnet-version: 9.0.x
     - name: Restore dependencies
-      run: dotnet restore src/GenericPipelines.sln
+      run: dotnet restore src/GenericPipelines.slnx
     - name: Build
-      run: dotnet build --no-restore --configuration Release src/GenericPipelines.sln
+      run: dotnet build --no-restore --configuration Release src/GenericPipelines.slnx
     - name: Test
-      run: dotnet test --no-build --verbosity normal --configuration Release src/GenericPipelines.sln
+      run: dotnet test --no-build --verbosity normal --configuration Release src/GenericPipelines.slnx
     - name: Create the package
       run: dotnet pack --configuration Release --output out -p:Version=${{vars.NUGET_PACKAGE_VERSION}} src/GenericPipelines
     - name: Publish the package
